@@ -1,6 +1,7 @@
 # DDP-IMA
 
-## Haapy coding
+## Hapy coding
 
-1. First item
-2. Second item
+1. System of Inventory controlling (Python)
+2. Light controlling [about True and False] (Python)
+3. 
