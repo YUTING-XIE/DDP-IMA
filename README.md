@@ -1,6 +1,6 @@
 # DDP-IMA
 
-## Hapy coding
+## Happy coding
 
 1. System of Inventory controlling (Python)
 2. Light controlling [about True and False] (Python)
