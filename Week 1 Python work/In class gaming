@@ -1,1 +1,22 @@
+# 1. roll_dice from 1-6
+import random
 
+def roll_dice():
+    return random.randrange(1,7)
+
+print(roll_dice())
+print(roll_dice())
+print(roll_dice())
+
+
+#2. light on/off
+def toggle_light(light_on):
+    if light_on == True:
+        light_on = False
+        print("Light turned off.")
+    else:
+        light_on = True
+        print("Light turned on.")
+        return light_on
+
+toggle_light(True)
