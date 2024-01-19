@@ -1,7 +1,7 @@
 def add(num1, num2):
-    return num1 + num2
+    return num1 + num2  #in this part, return means back to function (show to user)
 
-def subtract(num1, num2):
+def subtract(num1, num2): 
     return num1 - num2
 
 def multiply(num1, num2):
@@ -27,8 +27,8 @@ def calculator():
         choice = input("Enter choice (1/2/3/4): ")
 
         if choice in ["1", "2", "3", "4"]:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+            num1 = float(input("Enter first number: "))  #use float(), not int() becasuse user may add noninteger （like 1.22)
+            num2 = float(input("Enter second number: "))  
 
             if choice == "1":
                 result = add(num1, num2)
@@ -41,7 +41,7 @@ def calculator():
             print(f"Result: {result}\n")
                 
         elif choice == "5":
-            break
+            break  #means end the process
         else:
             print("Invalid input. Please try again.")
 
