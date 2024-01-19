@@ -1,11 +1,11 @@
 inventory = {}
 
-def add_item(item, quantity:int):
+def add_item(item, quantity:int): #add int() to make sure users input will not be considered as a str.
     if item in inventory:
-        inventory[item] += quantity
+        inventory[item] += quantity  #can also be shown as: inventory[item] = inventory[item] + quantity
     else:
         inventory[item] = quantity
-    print(f"Added {quantity} {item}(s).")
+    print(f"Added {quantity} {item}(s).") #This is the "nice" print method, with (f" ... {}...")
 
 def view_inventory():
     for item, quantity in inventory.items():
@@ -20,7 +20,7 @@ def update_item(item, quantity):
 
 def manage_inventory():
     while True:
-        print("\nInventory Management System")
+        print("\nInventory Management System") #This place \n means add a new line before "Inventory Management System"
         print("1. Add Item")
         print("2. View Inventory")
         print("3. Update Item Quantity")
