@@ -23,7 +23,7 @@
 }
 
 .size-options {
-    margin-bottom: 10px;
+    margin-bottom: 10px;     /*other css code will influence this part, if it looks not well, other css code should as be considered. */
 }
 
 .product-options {
