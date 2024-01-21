@@ -1,0 +1,115 @@
+.header-class {
+    background-color: rgb(234, 82, 1);
+    color: rgb(64, 56, 51);
+    text-align: center;
+}
+
+#breadcrumbs ul {
+    list-style: none;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+#breadcrumbs ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.Menu-class {
+    color: rgb(116, 82, 13);
+    text-align: center;
+    background-color: rgb(232, 203, 167);
+    padding: 10px;
+    border: 3px solid black;
+    padding: 10px 20px;
+    display: block
+}
+
+/*add hover function*/
+.Menu-class li:hover {
+    background-color: rgb(170, 170, 71);
+    transition: background-color 0.9s;
+    /*add transition function to colour*/
+    cursor: pointer;
+}
+
+
+
+.Menu-class ul {
+    list-style: none;
+    padding: 10px;
+    border: 10px solid rgb(223, 164, 70);
+    padding: 10px 20px;
+}
+
+#Tonkotsu-ID {
+    color: rgb(103, 131, 28);
+}
+
+#Shoyu-ID {
+    color: darkgoldenrod;
+
+}
+
+#Veggie-ID {
+    color: forestgreen;
+}
+
+.header-class img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.table-class {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.table-class,
+.table-class th,
+.table-class td {
+    border: 1px solid black;
+    background-color: rgb(247, 239, 161);
+}
+
+.table-class th,
+.table-class td {
+    padding: 8px;
+    text-align: left;
+}
+
+.footer-class {
+    background-color: rgb(190, 205, 56);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*flexbox */
+@media (min-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .header-class,
+    .main {
+        flex: 1;
+    }
+
+    .header-class {
+        flex-basis: 20%;
+    }
+
+    .main {
+        flex-basis: 60%;
+    }
+}
