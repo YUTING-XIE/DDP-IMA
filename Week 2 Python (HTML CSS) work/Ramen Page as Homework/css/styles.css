@@ -90,14 +90,14 @@
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh;  /*try to inccrease to 10000vh, too big for a website*/
 }
 
 
-/*flexbox */
+/*Flexbox */
 @media (min-width: 900px) {
     .container {
-        flex-direction: column;
+        flex-direction: column; /*try row, very ugle, column is the best*/
     }
 
     .header-class,
