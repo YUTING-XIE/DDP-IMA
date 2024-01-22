@@ -89,20 +89,22 @@
 
 .container {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;  /*try to inccrease to 10000vh, too big for a website*/
+    flex-flow: column wrap;
+    min-height: 100vh;
+    justify-content: space-evenly;
 }
 
 
-/*Flexbox */
-@media (min-width: 900px) {
+/*flexbox */
+@media all and (min-width: 900px) {
     .container {
-        flex-direction: column; /*try row, very ugle, column is the best*/
+        flex-flow: column wrap;
     }
 
     .header-class,
     .main {
-        flex: 1;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 
     .header-class {
